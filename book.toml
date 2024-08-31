@@ -1,0 +1,6 @@
+[book]
+authors = ["Patrick Unick"]
+language = "en"
+multilingual = false
+src = "src"
+title = "ApLang By Example"
