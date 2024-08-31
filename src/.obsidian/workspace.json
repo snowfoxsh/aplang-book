@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "5a9205571119f94c",
+    "type": "split",
+    "children": [
+      {
+        "id": "68d1e198da23259f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eacd1ea3dfaf686d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SUMMARY.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e7b2a1db5c073149",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c147d577019c20d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab247cfa1a4b9f73",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e2472aa88bbd34d1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "98657e26a99a7d96",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "70ba37d5df9eb4cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "8dc1c45fb8ea6964",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76cee2f21f98e581",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SUMMARY.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ff7521d91893c088",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "SUMMARY.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cf1b7d2610cf09b6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e5aaaad68b929c00",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "SUMMARY.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "eacd1ea3dfaf686d",
+  "lastOpenFiles": [
+    "installation.md",
+    "SUMMARY.md",
+    "guide/flow/repeat_while.md",
+    "guide/flow/if.md",
+    "guide/flow/control_flow.md",
+    "guide/comments.md",
+    "README.md",
+    "modules/fs.md",
+    "modules/time.md",
+    "modules/file_system.md",
+    "guide/basics/variables.md",
+    "modules/core.md",
+    "modules",
+    "guide/basics/expressions.md",
+    "guide/basics/types.md",
+    "guide/hello_world.md",
+    "guide/basics/assignment.md",
+    "guide/flow",
+    "guide/basics",
+    "chapter_1.md",
+    "guide"
+  ]
+}
