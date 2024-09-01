@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "guide/basics/basics.md",
+                "file": "installation.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "guide/basics/basics.md",
+                "file": "installation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "guide/basics/basics.md",
+                "file": "installation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "guide/basics/basics.md"
+                "file": "installation.md"
               }
             }
           }
@@ -160,13 +160,13 @@
   },
   "active": "eacd1ea3dfaf686d",
   "lastOpenFiles": [
+    "README.md",
+    "installation.md",
+    "guide/basics/basics.md",
     "guide/basics/types.md",
     "guide/basics/hello_world.md",
-    "guide/basics/basics.md",
-    "README.md",
     "SUMMARY.md",
     "guide/basics/comments.md",
-    "installation.md",
     "guide/basics/expressions.md",
     "modules/time.md",
     "modules/math.md",
