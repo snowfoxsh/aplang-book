@@ -4,7 +4,6 @@
 ## Guide
 - [Basics](guide/basics/basics.md)
 	- [Hello World](guide/basics/hello_world.md)
-	- [Comments](guide/basics/comments.md)
 	- [Types](guide/basics/types.md)
 	- [Expressions](guide/basics/expressions.md)
 	- [Variables](guide/basics/variables.md)

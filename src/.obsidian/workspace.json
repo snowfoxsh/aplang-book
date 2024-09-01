@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "guide/basics/basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "guide/basics/basics.md",
+                "file": "guide/basics/types.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "guide/basics/basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "guide/basics/basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SUMMARY.md"
+                "file": "guide/basics/basics.md"
               }
             }
           }
@@ -160,25 +160,25 @@
   },
   "active": "eacd1ea3dfaf686d",
   "lastOpenFiles": [
+    "guide/basics/types.md",
+    "guide/basics/hello_world.md",
     "guide/basics/basics.md",
-    "SUMMARY.md",
-    "modules/math.md",
     "README.md",
-    "modules/modules.md",
+    "SUMMARY.md",
+    "guide/basics/comments.md",
     "installation.md",
+    "guide/basics/expressions.md",
+    "modules/time.md",
+    "modules/math.md",
+    "modules/modules.md",
     "guide/flow/repeat_while.md",
     "guide/flow/if.md",
     "guide/flow/control_flow.md",
-    "guide/basics/comments.md",
     "modules/fs.md",
-    "modules/time.md",
     "modules/file_system.md",
     "guide/basics/variables.md",
     "modules/core.md",
     "modules",
-    "guide/basics/expressions.md",
-    "guide/basics/types.md",
-    "guide/basics/hello_world.md",
     "guide/basics/assignment.md",
     "guide/flow",
     "guide/basics",
