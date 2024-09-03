@@ -1,38 +1,71 @@
 # Hello World
-This is the source code for the classic "Hello World" program. You can use the DISPLAY function (sometimes called PROCEDURE) to print text to the screen. 
+
+Welcome to your first ApLang program! We'll start with the classic "Hello, World!" example, a simple program that displays text on the screen. This program introduces the `DISPLAY` procedure, which you can use to print text. 
 
 ```ap
 // This is a comment.
-// It is ignored by the interpreter.
+// Comments are ignored by the interpreter.
 
-// Print text to the console
-DISPLAY("Hello World")
+// Display text on the console
+DISPLAY("Hello, World!")
+//      ^^^^^^^^^^^^^^^^
+//          String Literal
 ```
+
+Let's break this down:
+
+- **`DISPLAY`**: This procedure (sometimes called a function) outputs the text you provide to the console.
+- **`"Hello, World!"`**: The text inside the quotation marks is called a "String Literal." A string is a sequence of characters. In this case, "Hello, World!" is the string we want to display.
+
 ## Comments
-Comments are not executed as code. Instead they are completely ignored. There are two types of comments that exist.
+
+Comments are an essential part of programming. They help you and others understand your code by providing explanations or notes. In ApLang, comments are not executed as part of your program; instead, they are completely ignored by the interpreter.
+
+There are two types of comments in ApLang:
+
+### Line Comments
+
+Line comments start with `//` and continue until the end of the line. 
 
 ```ap
-// Type One: interpreter will until the end of the line
-/* Type Two: will ignore untill it sees -->*/
+// This is a line comment. It explains the code below.
+DISPLAY("Hello, World!")
 ```
-### Guidelines
-They work as notes in the notes to help both the writer and reader to understand what is happening. You should leave comments to explain your code. Here are some general guidelines for writing good comments:
-- **DO**: Use comments to explain difficult to understand sections of code
-- **DO**: Use comments to help the reader understand *why* your code works
-- **DO**: Use comments to document design decisions (especially compromises)
-- **DON'T**: Use comments as a substitue for proper naming
-- **DONT'T**: Leave comments that just reiterate *what* your code does
+
+### Block Comments
+
+Block comments start with `/*` and end with `*/`. Everything between these markers is ignored by the interpreter.
 
 ```ap
-// Worse:
-// Add two to the margin
+/* 
+This is a block comment.
+It can span multiple lines.
+*/
+DISPLAY("Hello, World!")
+```
+
+## Commenting Guidelines
+
+Writing good comments is an important skill for making your code more readable and maintainable. Here are some guidelines for writing effective comments:
+
+- **DO**: Use comments to explain complex or non-obvious sections of code.
+- **DO**: Use comments to provide context on why certain decisions were made.
+- **DO**: Document design decisions, especially any trade-offs or compromises.
+- **DON'T**: Use comments as a substitute for clear and descriptive variable or function names.
+- **DON'T**: Write comments that simply restate what the code does; focus on the "why."
+
+### Example of Effective Comments
+
+Let's look at an example of how to use comments effectively:
+
+```ap
+// Poor Commenting:
+// Increment the margin by 2
 margin <- margin + 2
 
-// Better:
-// The edge of the render box is two pixeles wide
+// Better Commenting:
+// Increase margin to account for the 2-pixel border of the render box
 margin <- margin + 2
 ```
 
-Comments 
--- parking space  --
-> This is called printing to standard output commonly abbreviated to stdout. 
+In the first example, the comment just restates what the code does, which is redundant. The improved version explains *why* the margin is increased, providing valuable context.
