@@ -2,7 +2,7 @@
 - [Introduction](README.md)
 - [Installation](install/installation.md)
 	- [ApLang Interpreter](install/install_aplang.md)
-	- [Project](install/configure_env.md)
+	- [Project Setup](install/configure_env.md)
 ## Guide
 - [Basics](guide/basics/basics.md)
 	- [Hello World](guide/basics/hello_world.md)
@@ -10,8 +10,10 @@
 	- [Expressions](guide/basics/expressions.md)
 	- [Variables](guide/basics/variables.md)
 - [Control Flow](guide/flow/control_flow.md)
-	- [IF](guide/flow/if.md)
-	- [REPEAT WHILE](guide/flow/loops.md)
+	- [If Statements](guide/flow/if.md)
+	- [Loops](guide/flow/loops.md)
+	- [For Each Loop](guide/flow/for_each_loop.md)
+- [Procedures](guide/procedure.md)
 # Standard Library
 - [core](modules/core.md)
 - [fs](modules/fs.md)
