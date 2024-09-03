@@ -11,7 +11,7 @@
 	- [Variables](guide/basics/variables.md)
 - [Control Flow](guide/flow/control_flow.md)
 	- [IF](guide/flow/if.md)
-	- [REPEAT WHILE](guide/flow/repeat_while.md)
+	- [REPEAT WHILE](guide/flow/loops.md)
 # Standard Library
 - [core](modules/core.md)
 - [fs](modules/fs.md)
