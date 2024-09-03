@@ -2,25 +2,7 @@
 
 To start working on aplang projects, it is recommended to use Visual Studio Code (VS Code). Git is not strictly required, but it is highly recommended for version control.
 
-## Step 1: Install Git
-
-### Install Git
-
-1. **Download Git**:
-   - Go to the [Git website](https://git-scm.com/downloads).
-   - Choose your operating system and download the appropriate installer.
-
-2. **Install Git**:
-   - **Windows**: Run the downloaded `.exe` file and follow the installation prompts.
-   - **macOS**: Open the `.dmg` file and follow the installation instructions.
-   - **Linux**: Install Git using your package manager:
-     - **Debian/Ubuntu**: Run `sudo apt-get install git`.
-     - **Fedora**: Run `sudo dnf install git`.
-     - **Arch Linux**: Run `sudo pacman -S git`.
-
-3. **Verify Installation**:
-   - Open your terminal or command prompt.
-   - Run `git --version` to check that Git is installed correctly.
+## Step 1: Install GitHub Desktop and Git VCS
 
 ### Install GitHub Desktop
 
@@ -30,6 +12,8 @@ To start working on aplang projects, it is recommended to use Visual Studio Code
 
 2. **Install GitHub Desktop**:
    - **Windows/macOS**: Run the installer and follow the prompts to complete the installation.
+   - **Linux**: See your individual distributions documentation for installation information.
+   - [Git](https://git-scm.com) version control should automatically be installed by GitHub Desktop.
 
 ## Step 2: Install Visual Studio Code (VS Code)
 
