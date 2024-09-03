@@ -1,6 +1,8 @@
 # Summary
 - [Introduction](README.md)
-- [Installation](installation.md)
+- [Installation](install/installation.md)
+	- [ApLang Interpreter](install/install_aplang.md)
+	- [Project](install/configure_env.md)
 ## Guide
 - [Basics](guide/basics/basics.md)
 	- [Hello World](guide/basics/hello_world.md)

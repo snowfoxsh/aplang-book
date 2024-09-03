@@ -125,12 +125,7 @@ To start working on aplang projects, it is recommended to use Visual Studio Code
 
 2. **Run the File**: In the terminal, navigate to the directory containing `main.ap` and run the file using the `aplang` binary. You should see the output `Hello World!` in your console.
 
-## Troubleshooting
-
-- **`aplang` command not found**: Ensure that Cargo is installed correctly and that the Cargo bin directory (`$HOME/.cargo/bin` on Unix-like systems or `%USERPROFILE%\.cargo\bin` on Windows) is in your PATH.
-  
-- **File not found or permission denied**: Make sure you are in the correct directory and have the necessary permissions. Use `ls` (Linux/macOS) or `dir` (Windows) to confirm that `main.ap` exists.
-
 ## Conclusion
 
 Congratulations! You have successfully setup an `aplang` project. You can now begin to develop more complex programs using `aplang`. You are ready to begin following along with the rest of this book.
+## [Troubleshooting](installation.md)
