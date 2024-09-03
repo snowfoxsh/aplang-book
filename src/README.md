@@ -1,8 +1,16 @@
 # README
-this is the intro to the language. explain why it exists and stuff. 
 
-The point of this guide is not to be your teacher but to get you aquatinted with ApLang and for you to use as a refineries when you are programming. It assumes you have some very basic knowlage of programming but are a beginner. Back in the ancient days, during the dawn of personal computing your computer would come with manual which was super absolutely indispensable. It was difficult to do stuff without your manual. Let this book be your modern manual.
+This is the introduction to ApLang, a tool designed to help you excel in your AP Computer Science Principles class and score higher on your AP test.
 
+The purpose of this guide is not to replace your teacher but to get you acquainted with ApLang and serve as a reference while you are programming. It assumes you have some very basic knowledge of programming but are still a beginner.
+
+Back in the early days of personal computing, computers often came with a manual that was absolutely indispensable. It was difficult to accomplish much without that manual. Let this guide be your modern equivalent—your go-to resource for learning ApLang. 
+
+Some of ApLangs syntax is garbage. womp womp. Sorry about that...I did not design it. It was designed lovingly by committee by the Collage Board. 
+
+## Standard Library Documentation
+
+This book also contains the documentation for the standard library. Documentation explains how each standard library module's functions work. 
 ## About
 
-ApLang was itself written using the programming language [Rust](https://rust-lang.org). Rust was chosen as a host primarily because of its ability to "run anywhere" (thanks LLVM <3) and its awesome package manager Cargo. ApLang is an interpreted language meaning that it is executed without compiling first. I want this project to be accessable to as many people as possible
+ApLang was created using the programming language [Rust](https://rust-lang.org). Rust was chosen primarily for its ability to "run anywhere" (thanks to LLVM <3) and its excellent package manager, Cargo. ApLang is an interpreted language, meaning it is executed without being compiled first, making it easy to use and accessible to as many people as possible.
