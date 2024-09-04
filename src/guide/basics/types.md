@@ -59,11 +59,11 @@ Booleans are essential for making decisions in your programs. For example, you c
 is_ready <- TRUE
 
 // Check if is_ready is TRUE
-IF is_ready THEN
+IF (is_ready) {
     DISPLAY("Ready to go!")
-ELSE
+} ELSE {
     DISPLAY("Not ready yet.")
-ENDIF
+}
 ```
 
 In this example, the program checks the value of `is_ready`. If it is `TRUE`, it displays "Ready to go!" Otherwise, it displays "Not ready yet."
