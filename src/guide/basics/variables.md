@@ -1,4 +1,4 @@
-	# Variables
+# Variables
 
 Variables in ApLang are used to store and manage data. By assigning values to variables, you can reference and manipulate them throughout your program. This chapter will introduce you to the basics of variables, including how to create them, assign values, and use them effectively.
 
@@ -62,37 +62,30 @@ Here, `sum` is assigned the result of adding `a` and `b`. The variable `a` is th
 
 ## Variable Scope
 
-The *scope* of a variable is the region of your program where the variable is accessible. In ApLang, variables have a block scope, meaning they are only accessible within the block of code where they are defined.
+The *scope* of a variable is the region of your program where the variable is accessible. In ApLang, variables have a local scope, which means that a variable defined in a function (or procedure in ApLang's case) is accessible only within that function. Contrary to many programming languages, ApLang does not have global variables.
 
 ```ap
 x <- 10
+y <- 5
+z <- 4 // 'z' defined here is NOT accessible in max()
 
-IF (x > 5) {
-    y <- 20  // 'y' is only accessible within this block
-    DISPLAY(y)  // Output: 20
+PRODECURE max(x, y) {
+    IF (x >= y) {
+	    a <- x // 'a'  is not accessible outside of max()
+    } ELSE {
+	    a <- y // 'a' is also not accessible outside of max()
+    }
+	// Trying to access 'z' here would result in an error
+	// DISPLAY(z) // Error: 'z' is not defined
+    
+    RETURN a
 }
 
-// Trying to access 'y' here would result in an error
-// DISPLAY(y)  // Error: 'y' is not defined
+// Trying to access 'a' here would result in an error
+// DISPLAY(a) // Error: 'a' is not defined
 ```
 
-In this example, the variable `y` is defined inside the `IF` block and cannot be accessed outside of it. The variable `x`, however, is defined outside the block and can be accessed anywhere in the program.
-
-### Example: Variable Scope
-
-```ap
-counter <- 10
-
-IF (counter > 5) {
-    temp <- 50  // 'temp' is only accessible within this block
-    DISPLAY(temp)  // Output: 50
-}
-
-// 'temp' is not accessible here and would cause an error if used
-// DISPLAY(temp)  // Error: 'temp' is not defined
-```
-
-Understanding variable scope helps prevent errors and keeps your code organized and efficient.
+In this example, the variable `a` is defined inside the `PROCEDURE` block and cannot be accessed outside of it. In the same way, `z` is defined outside of the `PROCEDURE` block and cannot be accessed inside of it.
 
 ## Conclusion
 

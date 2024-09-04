@@ -19,7 +19,7 @@ Let's break this down:
 
 ## Comments
 
-Comments are an essential part of programming. They help you and others understand your code by providing explanations or notes. In ApLang, comments are not executed as part of your program; instead, they are completely ignored by the interpreter.
+Comments are an essential part of programming. They help you and others understand your code by providing explanations or notes. In ApLang, comments are not executed as part of your program; They are completely ignored by the interpreter.
 
 There are two types of comments in ApLang:
 
@@ -65,6 +65,10 @@ margin <- margin + 2
 
 // Better Commenting:
 // Increase margin to account for the 2-pixel border of the render box
+margin <- margin + 2
+
+// Best Comment:
+// Account for 2-px border of render box
 margin <- margin + 2
 ```
 
