@@ -17,9 +17,7 @@ To start working on aplang projects, it is recommended to use Visual Studio Code
 
 ## Step 2: Install Visual Studio Code (VS Code)
 
-### Install VS Code
-
-#### Install VS Code on Windows
+### Install VS Code on Windows
 
 1. **Visit the VS Code download page**: [VS Code Download](https://code.visualstudio.com/Download).
 
@@ -27,36 +25,17 @@ To start working on aplang projects, it is recommended to use Visual Studio Code
 
 3. **Run the installer**: Double-click the installer file (`VSCodeSetup-x64-<version>.exe`).
 
-4. **Follow the installation prompts**:
-   - Accept the license agreement and click "Next."
-   - Choose the destination folder or leave it as the default.
-   - Select additional tasks: It is recommended to check "Add to PATH" and "Register code as an editor for supported file types."
-   - Click "Next," then "Install."
+4. **Follow the on-screen installation prompts.
+	- Make sure to check "Add to PATH"
+	- Also check "Register code as an editor for supported file types"
+	- OPTIONAL: "Add to context menu"
 
-5. **Finish the installation**: Click "Finish" to complete the installation. Optionally, launch VS Code immediately by checking the "Launch Visual Studio Code" option.
+### Install VS Code on Linux
 
-#### Install VS Code on Linux
+1. **Install VSCode with your distro's package manager**
+	- If you need help, refer to the [installation documentation](https://code.visualstudio.com/docs/setup/linux)
 
-1. **Visit the VS Code download page**: [VS Code Download](https://code.visualstudio.com/Download).
-
-2. **Download the installer for Linux**:
-   - **Debian-based distributions (Ubuntu, etc.)**: Download the `.deb` file.
-   - **Red Hat-based distributions (Fedora, etc.)**: Download the `.rpm` file.
-
-3. **Install VS Code**:
-   - **Debian-based distributions**: Run the following commands in your terminal:
-     ```bash
-     sudo dpkg -i <path-to-file>.deb
-     sudo apt-get install -f
-     ```
-   - **Red Hat-based distributions**: Run the following command:
-     ```bash
-     sudo rpm -i <path-to-file>.rpm
-     ```
-
-4. **Launch VS Code**: Start VS Code from the applications menu or by typing `code` in your terminal.
-
-#### Install VS Code on macOS
+### Install VS Code on macOS
 
 1. **Visit the VS Code download page**: [VS Code Download](https://code.visualstudio.com/Download).
 
@@ -65,8 +44,6 @@ To start working on aplang projects, it is recommended to use Visual Studio Code
 3. **Install VS Code**:
    - Open the `.zip` file to extract the contents.
    - Drag the extracted `Visual Studio Code.app` file to your "Applications" folder.
-
-4. **Launch VS Code**: Open your "Applications" folder and double-click "Visual Studio Code." Alternatively, use Spotlight (`Cmd + Space`) to search for "Visual Studio Code."
 
 ## Step 3: Set Up a Project Directory
 
@@ -77,17 +54,16 @@ To start working on aplang projects, it is recommended to use Visual Studio Code
 2. **Create a New Repository**:
    - Click on "File" > "New Repository."
    - Fill in the repository name and choose the local path where you want to create the repository.
+	   - We recommend using the default path.
    - Click "Create Repository."
 
 ### Open the Project Directory in VS Code
 
-#### Using GitHub Desktop
-
-1. **Open the Repository in VS Code**:
+#### Using GitHub Desktop:
    - In GitHub Desktop, make sure your repository is selected.
    - Click on the "Repository" menu, then select "Open in Visual Studio Code." This will open the repository in VS Code.
 
-2. **Alternative Method**:
+#### Alternative Method:
    - If the "Open in Visual Studio Code" button is not available, click on the "Show in Explorer" (Windows) or "Show in Finder" (macOS) button to open the repository folder in your file explorer.
    - Right-click the folder and select "Open with Code" (if this option is available) or open VS Code, click on "File" > "Open Folder..." and navigate to your repository directory.
 

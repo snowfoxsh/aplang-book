@@ -14,7 +14,7 @@ DISPLAY(x)  // Output: 10
 
 In the example above, the variable `x` is created and assigned the value `10`. You can think of `x` as a label that points to the value `10`.
 
-### Variable Naming
+## Variable Naming
 
 Variable names in ApLang can contain letters, digits, and underscores (`_`). However, they must start with a letter. Good variable names are descriptive and make your code easier to understand.
 
@@ -24,7 +24,7 @@ apples_in_basket <- 5
 DISPLAY(apples_in_basket)  // Output: 5
 ```
 
-### Reassigning Variables
+## Reassigning Variables
 
 Variables in ApLang are mutable, meaning their values can be changed after they are created. To change the value of a variable, simply use the assignment operator `<-` again with a new value.
 
@@ -40,7 +40,7 @@ DISPLAY(count)  // Output: 2
 
 In this example, the variable `count` is initially set to `1` and then changed to `2`.
 
-### Using Variables in Expressions
+## Using Variables in Expressions
 
 Variables can be used in expressions just like literal values. You can perform operations with variables and assign the result to another variable or even back to the same variable.
 
@@ -75,8 +75,8 @@ PRODECURE max(x, y) {
     } ELSE {
 	    a <- y // 'a' is also not accessible outside of max()
     }
-	// Trying to access 'z' here would result in an error
-	// DISPLAY(z) // Error: 'z' is not defined
+    // Trying to access 'z' here would result in an error
+    // DISPLAY(z) // Error: 'z' is not defined
     
     RETURN a
 }
