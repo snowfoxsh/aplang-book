@@ -1,44 +1,62 @@
 # Modules
 
-> As you begin to write larger and more complex programs organizing your code will become increasingly more important ([The Rust Book](https://doc.rust-lang.org/stable/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html)). 
+> As you begin to write larger and more complex programs, organizing your code will become increasingly more important. ([The Rust Book](https://doc.rust-lang.org/stable/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html))
 
-Enter the module! They work to "encapsolate implementation details". What does that mean? Well (explain what that means). Its to hide unesssisary that so the user of the module does not need to worry about it. It allows you to effectivley break down a project into small building blocks which can be stuck together. Every `.ap` file is also a module. There are two types of modules in ApLang. Standard Library Modules that come with your aplang. Standard Library Modules are "native" meaning that they are writen in Rust. You can find documentation about them all in the `Standard Library` section of this guide. At its core this is what gives ApLang important functionality. Standard Library modules are by convention in SCREAMING_CASE, as are the functions that live inside each module.
+This is where modules come in. Modules help to **encapsulate implementation details**, which means they hide the internal workings of your code. By doing this, modules allow you to expose only the parts of the code that are necessary for the user, keeping the rest private. This makes it easier to understand and maintain your programs by breaking them down into smaller, more manageable building blocks.
+
+Every `.ap` file in ApLang is also considered a module. In ApLang, there are two types of modules: **Standard Library Modules** and **User Modules**.
+
+## Standard Library Modules
+
+Standard Library Modules come built-in with ApLang and are written in Rust. These modules provide essential functionality that you can use in your programs. Standard Library Modules and their functions follow a convention of using SCREAMING_CASE for their names. Here’s how you can import them:
 
 ```ap
-// Import all functions from a std module
+// Import all functions from a standard library module
 IMPORT MOD "MATH"
 
-// we can now use functions from this
+// Now, we can use functions from the MATH module
 
-// Import just the INPUT function from the "IO" module
+// Import just the INPUT function from the IO module
 IMPORT "INPUT" FROM MOD "IO"
 
-
-// Import the FILE_CREATE and FILE_READ functions from the "FS" (file system) module
+// Import the FILE_CREATE and FILE_READ functions from the FS (file system) module
 IMPORT ["FILE_CREATE", "FILE_READ"] FROM MOD "FS"
 ```
 
-The other type of modules are "User Modules". They are modules written in ApLang. All modules must have the file extention `.ap` or they will not be found. Instead of just calling the name of the module u must pass the path to it.
+## User Modules
 
-- make a nice directory trees for the examples when you think it would be usefull so the reader   can visualize the structure of the project
+User Modules are modules written by you, the programmer, using ApLang. These modules also have the `.ap` file extension, and you can specify their path when importing them. Here’s an example:
+
 ```ap
 // main.ap
 
-// notice the .ap file extention
-IMPORT "myFunction" from "./myModule.ap"
+// Importing a specific function from a user module using its relative path
+IMPORT "myFunction" FROM "./myModule.ap"
 
-// this is equivent to the previous statement
-IMPORT "myFunction" from "myModule.ap"
+// This is equivalent to the previous statement
+IMPORT "myFunction" FROM "myModule.ap"
 
-// you can import whole nested modules
-IMPORT "./nested/myModule.ap
+// Importing a whole nested module
+IMPORT "./nested/myModule.ap"
 ```
 
-Notice that we dont use SCREAMING_CASE here we use camelCase. Std code by convention is in SCREAMING_CASE but any procedures the programmer defines should be in camelCase.
+In contrast to Standard Library Modules, user-defined functions and modules should be written in camelCase rather than SCREAMING_CASE. This helps distinguish user code from the standard library code.
 
+### Directory Structure Example
 
-But how do we make it so functions in our file are accessable outside of the file? We need to EXPORT them. By default procedures are private meaning invisable to outside code. we can make them "public" or visable by placing the EXPORT keyword before PROCEDURE
+To better visualize how modules are organized, let's look at a simple project directory tree:
 
+```
+/my_project
+|-- main.ap
+|-- myModule.ap
+|-- nested/
+|   |-- myModule.ap
+```
+
+### Exporting Functions
+
+By default, functions in ApLang are private, meaning they can't be accessed outside of the file they're defined in. To make a function accessible to other modules, you need to use the `EXPORT` keyword before `PROCEDURE`. Here’s how you can export a function:
 
 ```ap
 // myModule.ap
@@ -47,13 +65,18 @@ EXPORT PROCEDURE myFunction() {
 }
 ```
 
-You can only export procedures not variables. If you need to export a variable wrap it in a function like this
+### Exporting Values
 
-```
-EXPORT PROCEDURE myFavorteNumber() {
+You cannot directly export variables in ApLang. If you want to share a variable across modules, you need to wrap it in a function:
+
+```ap
+EXPORT PROCEDURE myFavoriteNumber() {
     RETURN 8
 }
 ```
 
+By exporting this procedure, other modules can call `myFavoriteNumber()` to get the value `8`.
 
---- Please break this into a few sections. improve my writing but dont change the keep the tone. The style of writing should be that of "The rust book" and "Rust By example". Please make my examples better.
+## Conclusion
+
+Modules are a powerful tool in ApLang that help you organize and manage your code more effectively. By encapsulating implementation details, modules make it easier to break down complex programs into smaller, reusable components. Whether you're using built-in Standard Library Modules or creating your own User Modules, understanding how to import, export, and structure your code will allow you to build more robust and maintainable projects. As your programs grow, leveraging modules will become essential for keeping your codebase clean and efficient.
