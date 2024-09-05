@@ -14,6 +14,7 @@
 	- [Loops](guide/flow/loops.md)
 	- [For Each Loop](guide/flow/for_each_loop.md)
 - [Procedures](guide/procedure.md)
+- [Modules](guide/modules.md)
 # Standard Library
 - [core](std/core.md)
 - [fs](std/fs.md)
