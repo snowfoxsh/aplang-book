@@ -37,7 +37,7 @@ IMPORT "myFunction" FROM "./myModule.ap"
 IMPORT "myFunction" FROM "myModule.ap"
 
 // Importing a whole nested module
-IMPORT "./nested/myModule.ap"
+IMPORT "./nested/myNestedModule.ap"
 ```
 
 In contrast to Standard Library Modules, user-defined functions and modules should be written in camelCase rather than SCREAMING_CASE. This helps distinguish user code from the standard library code.
@@ -51,7 +51,7 @@ To better visualize how modules are organized, let's look at a simple project di
 |-- main.ap
 |-- myModule.ap
 |-- nested/
-|   |-- myModule.ap
+|   |-- myNestedModule.ap
 ```
 
 ### Exporting Functions
