@@ -41,12 +41,12 @@ words <- ["apple", "banana", "cherry"]
 
 // Iterate over each word in the list and display it in uppercase
 FOR EACH word IN words {
-    DISPLAY(word + " in uppercase is " + word + "!")
+    DISPLAY(word + " in uppercase is " + TO_UPPER(word) + "!")
 }
 // Output:
-// apple in uppercase is apple!
-// banana in uppercase is banana!
-// cherry in uppercase is cherry!
+// apple in uppercase is APPLE!
+// banana in uppercase is BANANA!
+// cherry in uppercase is CHERRY!
 ```
 
 In this example, the `FOR EACH` loop iterates over the `words` list and displays each word, demonstrating how to concatenate strings within the loop.
