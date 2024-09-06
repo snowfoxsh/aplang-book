@@ -40,7 +40,7 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           port: 22
           source: "./book/*"
-          target: "/var/www/html/book"
+          target: "/var/www/html/"
 
       # Step 6: Restart Nginx on the DigitalOcean Droplet
       - name: Restart Nginx
