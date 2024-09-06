@@ -28,6 +28,7 @@ jobs:
       - name: Build mdBook
         run: |
           mdbook build
+          ls -la ./book
         working-directory: ./  # Path to your mdBook project
 
       # Step 5: Deploy to the DigitalOcean droplet via SSH
