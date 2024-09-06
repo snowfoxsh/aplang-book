@@ -41,6 +41,7 @@ jobs:
           script: |
             rm -rf /var/www/html/book
             mkdir -p /var/www/html/book
+            echo "hello world" >> ~/hello.txt
             cat ./book/index.html
             scp -r ./book/* root@${{ secrets.DROPLET_IP }}:/var/www/html/book/
             sudo systemctl restart nginx
