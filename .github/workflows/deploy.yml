@@ -31,18 +31,23 @@ jobs:
           ls -la ./book
         working-directory: ./  # Path to your mdBook project
 
-      # Step 5: Deploy to the DigitalOcean droplet via SSH
-      - name: Deploy to DigitalOcean
+      # Step 5: SCP Files to the DigitalOcean Droplet
+      - name: SCP Files
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.DROPLET_IP }}
+          username: root
+          key: ${{ secrets.DEPLOY_KEY }}
+          port: 22
+          source: "./book/*"
+          target: "/var/www/html/book"
+
+      # Step 6: Restart Nginx on the DigitalOcean Droplet
+      - name: Restart Nginx
         uses: appleboy/ssh-action@v0.1.8
         with:
           host: ${{ secrets.DROPLET_IP }}
           username: root
           key: ${{ secrets.DEPLOY_KEY }}
           port: 22
-          script: |
-            rm -rf /var/www/html/book
-            mkdir -p /var/www/html/book
-            echo "hello world" >> ~/hello.txt
-            cat ./book/index.html
-            scp -r ./book/* root@${{ secrets.DROPLET_IP }}:/var/www/html/book/
-            sudo systemctl restart nginx
+          script: sudo systemctl restart nginx
