@@ -30,8 +30,18 @@ jobs:
           mdbook build
           ls -la ./book
         working-directory: ./  # Path to your mdBook project
+        
+      # Step 5: Remove
+      - name: Remove old mdBook
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.DROPLET_IP }}
+          username: root
+          key: ${{ secrets.DEPLOY_KEY }}
+          port: 22
+          script: rm -rf /var/www/html/book
 
-      # Step 5: SCP Files to the DigitalOcean Droplet
+      # Step 6: SCP Files to the DigitalOcean Droplet
       - name: SCP Files
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -41,13 +51,3 @@ jobs:
           port: 22
           source: "./book/*"
           target: "/var/www/html/"
-
-      # Step 6: Restart Nginx on the DigitalOcean Droplet
-      - name: Restart Nginx
-        uses: appleboy/ssh-action@v0.1.8
-        with:
-          host: ${{ secrets.DROPLET_IP }}
-          username: root
-          key: ${{ secrets.DEPLOY_KEY }}
-          port: 22
-          script: sudo systemctl restart nginx
