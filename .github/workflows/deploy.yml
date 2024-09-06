@@ -1,0 +1,45 @@
+name: Deploy mdBook
+
+on:
+  push:
+    branches:
+      - main  # or the branch you want to deploy from
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Install Rust environment (if needed for mdBook)
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      # Step 3: Install mdBook
+      - name: Install mdBook
+        run: cargo install mdbook
+
+      # Step 4: Build the mdBook
+      - name: Build mdBook
+        run: |
+          mdbook build
+        working-directory: ./  # Path to your mdBook project
+
+      # Step 5: Deploy to the DigitalOcean droplet via SSH
+      - name: Deploy to DigitalOcean
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.DROPLET_IP }}
+          username: root
+          key: ${{ secrets.DEPLOY_KEY }}
+          port: 22
+          script: |
+            rm -rf /var/www/html/book
+            mkdir -p /var/www/html/book
+            scp -r ./book/* root@${{ secrets.DROPLET_IP }}:/var/www/html/book/
+            sudo systemctl restart nginx
