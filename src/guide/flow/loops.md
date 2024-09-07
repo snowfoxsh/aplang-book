@@ -59,7 +59,7 @@ The `REPEAT UNTIL` loop executes a block of code repeatedly until a specified co
 ### Syntax
 
 ```ap
-REPEAT UNTIL condition {
+REPEAT UNTIL (condition) {
     // Code to repeat
 }
 ```
@@ -73,7 +73,7 @@ The loop continues to execute as long as the `condition` is `FALSE`. Once the co
 count <- 0
 
 // Repeat until count is equal to 5
-REPEAT UNTIL count == 5 {
+REPEAT UNTIL (count == 5) {
     count <- count + 1
     DISPLAY(count)
 }
@@ -95,7 +95,7 @@ balance <- 100
 goal <- 200
 
 // Double the balance until it reaches the goal
-REPEAT UNTIL balance >= goal {
+REPEAT UNTIL (balance >= goal) {
     balance <- balance * 2
     DISPLAY(balance)
 }
