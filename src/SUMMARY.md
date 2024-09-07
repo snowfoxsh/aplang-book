@@ -13,6 +13,7 @@
 	- [If Statements](guide/flow/if.md)
 	- [Loops](guide/flow/loops.md)
 	- [For Each Loop](guide/flow/for_each_loop.md)
+	- [Break And Continue](guide/flow/break_continue.md)
 - [Procedures](guide/procedure.md)
 - [Modules](guide/modules.md)
 # Standard Library
