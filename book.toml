@@ -7,4 +7,5 @@ title = "ApLang"
 
 [output.html]
 default-theme = "ayu"
+preferred-dark-theme = "ayu"
 git-repository-url = "https://github.com/snowfoxsh/aplang-book"
