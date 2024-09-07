@@ -1,6 +1,10 @@
 [book]
-authors = ["Patrick Unick"]
+authors = ["Patrick Unick", "Eli Fischl"]
 language = "en"
 multilingual = false
 src = "src"
-title = "ApLang By Example"
+title = "ApLang"
+
+[output.html]
+default-theme = "ayu"
+git-repository-url = "https://github.com/snowfoxsh/aplang-book"
