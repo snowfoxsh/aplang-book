@@ -35,7 +35,7 @@ Checks whether a given path exists.
 - `path: String` The path to check.
 
 **Returns:**  
-- `Bool`: `True` if the path exists, `False` otherwise.
+- `Bool`: `TRUE` if the path exists, `FALSE` otherwise.
 
 **Example Usage:**
 ```ap
@@ -53,7 +53,7 @@ Checks if a given path is a file.
 - `path: String` The path to check.
 
 **Returns:**  
-- `Bool`: `True` if the path is a file, `False` otherwise.
+- `Bool`: `TRUE` if the path is a file, `FALSE` otherwise.
 
 **Example Usage:**
 ```ap
@@ -71,7 +71,7 @@ Checks if a given path is a directory.
 - `path: String` The path to check.
 
 **Returns:**  
-- `Bool`: `True` if the path is a directory, `False` otherwise.
+- `Bool`: `TRUE` if the path is a directory, `FALSE` otherwise.
 
 **Example Usage:**
 ```ap
@@ -83,13 +83,13 @@ DISPLAY(is_dir)
 
 ## FILE_CREATE
 
-Creates a new file at the specified path. Returns `True` if the file was created successfully.
+Creates a new file at the specified path. Returns `TRUE` if the file was created successfully.
 
 **Parameters:**  
 - `file_path: String` The path where the file should be created.
 
 **Returns:**  
-- `Bool`: `True` if the file was created, `False` if there was an error.
+- `Bool`: `TRUE` if the file was created, `FALSE` if there was an error.
 
 **Example Usage:**
 ```ap
@@ -107,8 +107,7 @@ Reads the contents of a file as a string. Returns `NULL` if the file cannot be r
 - `file_path: String` The path of the file to read.
 
 **Returns:**  
-- `String`: The contents of the file.
-- `Null`: If the file cannot be read.
+- `String`: The contents of the file, `NULL` If the file cannot be read.
 
 **Example Usage:**
 ```ap
@@ -125,14 +124,14 @@ IF (contents == NULL) {
 
 ## FILE_APPEND
 
-Appends the given content to the end of a file. Returns `True` if successful.
+Appends the given content to the end of a file. Returns `TRUE` if successful.
 
 **Parameters:**  
 - `file_path: String` The path of the file.
 - `contents: Value` The content to append.
 
 **Returns:**  
-- `Bool`: `True` if the content was successfully appended, `False` otherwise.
+- `Bool`: `TRUE` if the content was successfully appended, `FALSE` otherwise.
 
 **Example Usage:**
 ```ap
@@ -144,14 +143,14 @@ DISPLAY(success)
 
 ## FILE_OVERWRITE
 
-Overwrites the contents of a file with the provided content. Returns `True` if successful.
+Overwrites the contents of a file with the provided content. Returns `TRUE` if successful.
 
 **Parameters:**  
 - `file_path: String` The path of the file.
 - `contents: Value` The content to overwrite the file with.
 
 **Returns:**  
-- `Bool`: `True` if the content was successfully written, `False` otherwise.
+- `Bool`: `TRUE` if the content was successfully written, `FALSE` otherwise.
 
 **Example Usage:**
 ```ap

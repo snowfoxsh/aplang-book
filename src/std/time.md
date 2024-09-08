@@ -47,7 +47,7 @@ Pauses the execution of the program for a specified number of milliseconds.
 - `duration: Number` The duration to sleep in milliseconds.
 
 **Returns:**  
-- `Null`
+- `NULL`
 
 **Example Usage:**
 ```ap

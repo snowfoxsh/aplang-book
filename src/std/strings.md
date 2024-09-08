@@ -41,8 +41,7 @@ Converts a string to a number (`f64`). Returns `NULL` if the conversion is not p
 - `raw: String` The string to convert.
 
 **Returns:**  
-- `Number`: The converted number.
-- `Null`: If the conversion fails.
+- `Number`: The converted number, `NULL` If the conversion fails.
 
 **Example Usage:**
 ```ap
@@ -63,12 +62,11 @@ Converts a string to a boolean. Returns `NULL` if the conversion is not possible
 - `raw: String` The string to convert.
 
 **Returns:**  
-- `Bool`: The converted boolean.
-- `Null`: If the conversion fails.
+- `Bool`: The converted boolean, `NULL` If the conversion fails.
 
 **Example Usage:**
 ```ap
-boolean <- TO_BOOL("true")
+boolean <- TO_BOOL("TRUE") // you can also use "true" here
 
 IF (boolean != NULL AND boolean == TRUE) {
     DISPLAY("It's true!")
@@ -169,7 +167,7 @@ Checks if a string contains a given substring.
 - `pattern: String` The substring to search for.
 
 **Returns:**  
-- `Bool`: `true` if the substring is found, `false` otherwise.
+- `Bool`: `TRUE` if the substring is found, `FALSE` otherwise.
 
 **Example Usage:**
 ```ap
@@ -212,7 +210,7 @@ Checks if a string starts with a given prefix.
 - `prefix: String` The prefix to check for.
 
 **Returns:**  
-- `Bool`: `true` if the string starts with the prefix, `false` otherwise.
+- `Bool`: `TRUE` if the string starts with the prefix, `FALSE` otherwise.
 
 **Example Usage:**
 ```ap
@@ -234,7 +232,7 @@ Checks if a string ends with a given suffix.
 - `suffix: String` The suffix to check for.
 
 **Returns:**  
-- `Bool`: `true` if the string ends with the suffix, `false` otherwise.
+- `Bool`: `TRUE` if the string ends with the suffix, `FALSE` otherwise.
 
 **Example Usage:**
 ```ap

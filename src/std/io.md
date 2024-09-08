@@ -71,7 +71,7 @@ Displays a formatted string to the console by replacing placeholders (`{}`) with
 - `args: List` The list of values to insert into the format string.
 
 **Returns:**  
-- `Null`: No return value, outputs directly to the console.
+- `NULL`
 
 **Example Usage:**
 ```ap

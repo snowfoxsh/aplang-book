@@ -35,7 +35,7 @@ Outputs the given value to the console.
 - `value: Any` The value to be displayed.
 
 **Returns:**  
-- `Null`
+- `NULL`
 
 **Example Usage:**
 ```ap
@@ -72,7 +72,7 @@ Inserts a value into a list at a specified index.
 - `value: Any` The value to insert.
 
 **Returns:**  
-- `Null`: No return value.
+- `NULL`
 
 **Example Usage:**
 ```ap
@@ -92,7 +92,7 @@ Appends a value to the end of a list.
 - `value: Any` The value to append.
 
 **Returns:**  
-- `Null`: No return value.
+- `NULL`
 
 **Example Usage:**
 ```ap
