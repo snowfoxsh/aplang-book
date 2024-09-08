@@ -65,6 +65,41 @@ EXPORT PROCEDURE myFunction() {
 }
 ```
 
+If you are exporting Procedures that require other Modules, you must import the Module Inside the Procedure that you want to export, or you must import the Module inside the main file that calls the Procedure.
+
+<div class="warning">This Behavior Might Change In The Future</div>
+
+#### Importing the Module inside the Procedure
+```ap
+// main.ap
+IMPORT MOD "module.ap"
+
+myModuleFunction() // Function defined in module.ap
+
+// module.ap
+IMPORT MOD "TIME" // This import will not translate to main.ap
+
+myModuleFunction() {
+	IMPORT MOD "TIME" // You need to import TIME here
+	TIME()
+}
+```
+
+#### Importing the Module Inside Main
+```ap
+// main.ap
+IMPORT MOD "module.ap"
+IMPORT "TIME" // Or you can import TIME here
+
+myModuleFunction() // Function defined in module.ap
+
+// module.ap
+IMPORT MOD "TIME" // This import will not translate to main.ap
+
+myModuleFunction() {
+	TIME()
+}
+```
 ### Exporting Values
 
 You cannot directly export variables in ApLang. If you want to share a variable across modules, you need to wrap it in a function:
