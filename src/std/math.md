@@ -1,11 +1,10 @@
 # Math Module Documentation
 
-The Math module provides a variety of mathematical functions, including trigonometric, hyperbolic, exponential, logarithmic, rounding, and clamping functions. It also includes important constants like PI, E, and TAU.
-
-### Import Example
 ```ap
 IMPORT MOD "MATH"
 ```
+
+The Math module provides a variety of mathematical functions, including trigonometric, hyperbolic, exponential, logarithmic, rounding, and clamping functions. It also includes important constants like PI, E, and TAU.
 
 ## Table of Contents
 
@@ -48,18 +47,17 @@ IMPORT MOD "MATH"
 
 ## SIN
 
-**Description:**  
 Calculates the sine of an angle in radians.
 
 **Parameters:**  
-- `angle` (f64): The angle in radians.
+- `angle: Number` The angle in radians.
 
 **Returns:**  
-- `f64`: The sine of the angle.
+- `Number`: The sin of the given angle
 
 **Example Usage:**
 ```ap
-result <- SIN(1.5708)  # Approximate value of PI/2
+result <- SIN(1.5708) // Approx value of PI/2
 DISPLAY(result)
 ```
 
@@ -67,37 +65,35 @@ DISPLAY(result)
 
 ## COS
 
-**Description:**  
 Calculates the cosine of an angle in radians.
 
 **Parameters:**  
-- `angle` (f64): The angle in radians.
+- `angle: Number` The angle in radians.
 
 **Returns:**  
-- `f64`: The cosine of the angle.
+- `Number`: The cosine of the given angle.
 
 **Example Usage:**
 ```ap
-result <- COS(0)  # 0 radians
+result <- COS(0)
 DISPLAY(result)
 ```
 
 ---
 
 ## TAN
-
-**Description:**  
+ 
 Calculates the tangent of an angle in radians.
 
 **Parameters:**  
-- `angle` (f64): The angle in radians.
+- `angle: Number` The angle in radians.
 
 **Returns:**  
-- `f64`: The tangent of the angle.
+- `Number`: The tangent of the given angle.
 
 **Example Usage:**
 ```ap
-result <- TAN(0.7854)  # Approximate value of PI/4
+result <- TAN(0.7854) // Approx value of PI/4
 DISPLAY(result)
 ```
 
@@ -105,14 +101,13 @@ DISPLAY(result)
 
 ## ASIN
 
-**Description:**  
 Calculates the arc sine of a value.
 
 **Parameters:**  
-- `value` (f64): The input value, must be between -1 and 1.
+- `value: Number` The input value, must be between -1 and 1.
 
 **Returns:**  
-- `f64`: The arc sine in radians.
+- `Number`: The arc sine in radians of the given angle.
 
 **Example Usage:**
 ```ap
@@ -124,14 +119,13 @@ DISPLAY(result)
 
 ## ACOS
 
-**Description:**  
 Calculates the arc cosine of a value.
 
 **Parameters:**  
-- `value` (f64): The input value, must be between -1 and 1.
+- `value: Number` The input value, must be between -1 and 1.
 
 **Returns:**  
-- `f64`: The arc cosine in radians.
+- `Number`: The arc cosine in radians of the given angle.
 
 **Example Usage:**
 ```ap
@@ -143,14 +137,13 @@ DISPLAY(result)
 
 ## ATAN
 
-**Description:**  
 Calculates the arc tangent of a value.
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number` The input value.
 
 **Returns:**  
-- `f64`: The arc tangent in radians.
+- `Number`: The arc tangent in radians of the given angle.
 
 **Example Usage:**
 ```ap
@@ -162,15 +155,14 @@ DISPLAY(result)
 
 ## ATAN2
 
-**Description:**  
 Calculates the arc tangent of `y/x`, using the signs of both values to determine the correct quadrant.
 
 **Parameters:**  
-- `y` (f64): The y-coordinate.
-- `x` (f64): The x-coordinate.
+- `y: Number` The y-coordinate.
+- `x: Number` The x-coordinate.
 
 **Returns:**  
-- `f64`: The arc tangent of `y/x`.
+- `Number`: The arc tangent of `y/x`.
 
 **Example Usage:**
 ```ap
@@ -182,14 +174,13 @@ DISPLAY(result)
 
 ## SINH
 
-**Description:**  
 Calculates the hyperbolic sine of a value.
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number` The input value.
 
 **Returns:**  
-- `f64`: The hyperbolic sine of the value.
+- `Number`: The hyperbolic sine of the given value.
 
 **Example Usage:**
 ```ap
@@ -201,14 +192,13 @@ DISPLAY(result)
 
 ## COSH
 
-**Description:**  
 Calculates the hyperbolic cosine of a value.
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number` The input value.
 
 **Returns:**  
-- `f64`: The hyperbolic cosine of the value.
+- `Number`: The hyperbolic cosine of the given value.
 
 **Example Usage:**
 ```ap
@@ -220,14 +210,13 @@ DISPLAY(result)
 
 ## TANH
 
-**Description:**  
 Calculates the hyperbolic tangent of a value.
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number` The input value.
 
 **Returns:**  
-- `f64`: The hyperbolic tangent of the value.
+- `Number`: The hyperbolic tangent of the given value.
 
 **Example Usage:**
 ```ap
@@ -239,14 +228,13 @@ DISPLAY(result)
 
 ## ASINH
 
-**Description:**  
 Calculates the inverse hyperbolic sine of a value.
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number` The input value.
 
 **Returns:**  
-- `f64`: The inverse hyperbolic sine of the value.
+- `Number`: The inverse hyperbolic sine of the given value.
 
 **Example Usage:**
 ```ap
@@ -258,14 +246,13 @@ DISPLAY(result)
 
 ## ACOSH
 
-**Description:**  
 Calculates the inverse hyperbolic cosine of a value.
 
 **Parameters:**  
-- `value` (f64): The input value, must be greater than or equal to 1.
+- `value: Number` The input value, must be greater than or equal to 1.
 
 **Returns:**  
-- `f64`: The inverse hyperbolic cosine of the value.
+- `Number`: The inverse hyperbolic cosine of the given value.
 
 **Example Usage:**
 ```ap
@@ -276,15 +263,14 @@ DISPLAY(result)
 ---
 
 ## ATANH
-
-**Description:**  
+ 
 Calculates the inverse hyperbolic tangent of a value.
 
 **Parameters:**  
-- `value` (f64): The input value, must be between -1 and 1.
+- `value: Number` The input value, must be between -1 and 1.
 
 **Returns:**  
-- `f64`: The inverse hyperbolic tangent of the value.
+- `Number`: The inverse hyperbolic tangent of the given value.
 
 **Example Usage:**
 ```ap
@@ -296,14 +282,13 @@ DISPLAY(result)
 
 ## EXP
 
-**Description:**  
 Calculates the exponential of a value (e^value).
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number` The input value.
 
 **Returns:**  
-- `f64`: The result of `e^value`.
+- `Number`: The result of `e^value`.
 
 **Example Usage:**
 ```ap
@@ -315,15 +300,14 @@ DISPLAY(result)
 
 ## LOG
 
-**Description:**  
 Calculates the logarithm of a value with a specified base.
 
 **Parameters:**  
-- `value` (f64): The input value.
-- `base` (f64): The base of the logarithm.
+- `value: Number` The input value.
+- `base: Number` The base of the logarithm.
 
 **Returns:**  
-- `f64`: The logarithm of `value` to the base `base`.
+- `Number`: The logarithm of `value` to the base `base`.
 
 **Example Usage:**
 ```ap
@@ -335,14 +319,13 @@ DISPLAY(result)
 
 ## LOG10
 
-**Description:**  
 Calculates the base-10 logarithm of a value.
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number`: The input value.
 
 **Returns:**  
-- `f64`: The base-10 logarithm of the value.
+- `Number` The base-10 logarithm of the given value.
 
 **Example Usage:**
 ```ap
@@ -354,14 +337,13 @@ DISPLAY(result)
 
 ## LOG2
 
-**Description:**  
 Calculates the base-2 logarithm of a value.
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number` The input value.
 
 **Returns:**  
-- `f64`: The base-2 logarithm of the value.
+- `Number`: The base-2 logarithm of the given value.
 
 **Example Usage:**
 ```ap
@@ -373,14 +355,13 @@ DISPLAY(result)
 
 ## ROUND
 
-**Description:**  
 Rounds a number to the nearest whole number.
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number` The input value.
 
 **Returns:**  
-- `f64`: The rounded value.
+- `Number`: The rounded value.
 
 **Example Usage:**
 ```ap
@@ -392,91 +373,84 @@ DISPLAY(result)
 
 ## FLOOR
 
-**Description:**  
 Rounds a number down to the nearest whole number.
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number` The input value.
 
 **Returns:**  
-- `f64`: The rounded-down value.
+- `Number`: The rounded-down value.
 
 **Example Usage:**
 ```ap
 result <- FLOOR(2.7)
-DISPLAY(result)
+DISPLAY(result) // 2
 ```
 
 ---
 
 ## CEIL
 
-**Description:**  
 Rounds a number up to the nearest whole number.
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number` The input value.
 
 **Returns:**  
-- `f64`: The rounded-up value.
+- `Number`: The rounded-up value.
 
 **Example Usage:**
 ```ap
 result <- CEIL(2.1)
-DISPLAY(result)
+DISPLAY(result) // 3
 ```
 
 ---
 
 ## INT
 
-**Description:**  
 Truncates the decimal part of a number.
 
 **Parameters:**  
-- `value` (f64): The input value.
+- `value: Number` The input value.
 
 **Returns:**  
-- `f64`: The truncated value.
+- `Number`: The truncated value.
 
 **Example Usage:**
 ```ap
 result <- INT(2.7)
-DISPLAY(result)
+DISPLAY(result) // 2
 ```
 
 ---
 
 ## CLAMP
 
-**Description:**  
 Clamps a number between a minimum and maximum value.
 
 **Parameters:**  
-- `value` (f64): The input value.
-- `min` (f64): The minimum value.
-- `max` (f64): The maximum value.
+- `value: Number` The input value.
+- `min: Number` The minimum value.
+- `max: Number` The maximum value.
 
 **Returns:**  
-- `f64`: The clamped value.
+- `Number`: The clamped value.
 
 **Example Usage:**
 ```ap
-result <- CLAMP(5, 1, 10)
-DISPLAY(result)
+result <- CLAMP(15, 1, 10)
+DISPLAY(result) // 10
 ```
 
 ---
 
 ## PI
 
-**Description:**  
-Returns the value
-
- of PI.
+Returns the value of PI.
 
 **Returns:**  
-- `f64`: The value of PI (3.14159...).
+- `Number`: The value of PI (3.14159...).
 
 **Example Usage:**
 ```ap
@@ -488,11 +462,10 @@ DISPLAY(pi_value)
 
 ## E
 
-**Description:**  
 Returns the value of Euler's number (e).
 
 **Returns:**  
-- `f64`: The value of Euler's number (2.71828...).
+- `Number`: The value of Euler's number (2.71828...).
 
 **Example Usage:**
 ```ap
@@ -504,11 +477,10 @@ DISPLAY(e_value)
 
 ## TAU
 
-**Description:**  
 Returns the value of TAU (2 * PI).
 
 **Returns:**  
-- `f64`: The value of TAU (6.28318...).
+- `Number`: The value of TAU (6.28318...).
 
 **Example Usage:**
 ```ap

@@ -1,12 +1,10 @@
 # File System Module Documentation
 
-The File System module provides functions for interacting with the file system, including checking paths, reading/writing files, and managing directories.
-
-### Import Example
 ```ap
 IMPORT MOD "FS"
 ```
 
+The File System module provides functions for interacting with the file system, including checking paths, reading/writing files, and managing directories.
 ## Table of Contents
 
 - [File System Module Documentation](#file-system-module-documentation)
@@ -31,14 +29,13 @@ IMPORT MOD "FS"
 
 ## PATH_EXISTS
 
-**Description:**  
 Checks whether a given path exists.
 
 **Parameters:**  
-- `path` (Value::String): The path to check.
+- `path: String` The path to check.
 
 **Returns:**  
-- `Value::Bool`: `True` if the path exists, `False` otherwise.
+- `Bool`: `True` if the path exists, `False` otherwise.
 
 **Example Usage:**
 ```ap
@@ -50,14 +47,13 @@ DISPLAY(exists)
 
 ## PATH_IS_FILE
 
-**Description:**  
 Checks if a given path is a file.
 
 **Parameters:**  
-- `path` (Value::String): The path to check.
+- `path: String` The path to check.
 
 **Returns:**  
-- `Value::Bool`: `True` if the path is a file, `False` otherwise.
+- `Bool`: `True` if the path is a file, `False` otherwise.
 
 **Example Usage:**
 ```ap
@@ -69,14 +65,13 @@ DISPLAY(is_file)
 
 ## PATH_IS_DIRECTORY
 
-**Description:**  
 Checks if a given path is a directory.
 
 **Parameters:**  
-- `path` (Value::String): The path to check.
+- `path: String` The path to check.
 
 **Returns:**  
-- `Value::Bool`: `True` if the path is a directory, `False` otherwise.
+- `Bool`: `True` if the path is a directory, `False` otherwise.
 
 **Example Usage:**
 ```ap
@@ -88,14 +83,13 @@ DISPLAY(is_dir)
 
 ## FILE_CREATE
 
-**Description:**  
 Creates a new file at the specified path. Returns `True` if the file was created successfully.
 
 **Parameters:**  
-- `file_path` (Value::String): The path where the file should be created.
+- `file_path: String` The path where the file should be created.
 
 **Returns:**  
-- `Value::Bool`: `True` if the file was created, `False` if there was an error.
+- `Bool`: `True` if the file was created, `False` if there was an error.
 
 **Example Usage:**
 ```ap
@@ -107,15 +101,14 @@ DISPLAY(success)
 
 ## FILE_READ
 
-**Description:**  
 Reads the contents of a file as a string. Returns `NULL` if the file cannot be read.
 
 **Parameters:**  
-- `file_path` (Value::String): The path of the file to read.
+- `file_path: String` The path of the file to read.
 
 **Returns:**  
-- `Value::String`: The contents of the file.
-- `Value::Null`: If the file cannot be read.
+- `String`: The contents of the file.
+- `Null`: If the file cannot be read.
 
 **Example Usage:**
 ```ap
@@ -132,15 +125,14 @@ IF (contents == NULL) {
 
 ## FILE_APPEND
 
-**Description:**  
 Appends the given content to the end of a file. Returns `True` if successful.
 
 **Parameters:**  
-- `file_path` (Value::String): The path of the file.
-- `contents` (Value): The content to append.
+- `file_path: String` The path of the file.
+- `contents: Value` The content to append.
 
 **Returns:**  
-- `Value::Bool`: `True` if the content was successfully appended, `False` otherwise.
+- `Bool`: `True` if the content was successfully appended, `False` otherwise.
 
 **Example Usage:**
 ```ap
@@ -152,15 +144,14 @@ DISPLAY(success)
 
 ## FILE_OVERWRITE
 
-**Description:**  
 Overwrites the contents of a file with the provided content. Returns `True` if successful.
 
 **Parameters:**  
-- `file_path` (Value::String): The path of the file.
-- `contents` (Value): The content to overwrite the file with.
+- `file_path: String` The path of the file.
+- `contents: Value` The content to overwrite the file with.
 
 **Returns:**  
-- `Value::Bool`: `True` if the content was successfully written, `False` otherwise.
+- `Bool`: `True` if the content was successfully written, `False` otherwise.
 
 **Example Usage:**
 ```ap
@@ -172,14 +163,13 @@ DISPLAY(success)
 
 ## READ_DIRECTORY
 
-**Description:**  
 Reads the contents of a directory and returns a list of file paths.
 
 **Parameters:**  
-- `path` (Value::String): The path of the directory to read.
+- `path: String` The path of the directory to read.
 
 **Returns:**  
-- `Value::List`: A list of file paths in the directory.
+- `List`: A list of file paths in the directory.
 
 **Example Usage:**
 ```ap

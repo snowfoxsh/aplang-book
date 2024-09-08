@@ -1,11 +1,10 @@
 # Time Module Documentation
 
-The Time module provides functions for getting the current time and pausing execution for a specified duration.
-
-### Import Example
 ```ap
 IMPORT MOD "TIME"
 ```
+
+The Time module provides functions for getting the current time and pausing execution for a specified duration.
 
 ## Table of Contents
 
@@ -25,14 +24,12 @@ IMPORT MOD "TIME"
 
 ## TIME
 
-**Description:**  
 Returns the current time in milliseconds since the UNIX epoch (January 1, 1970).
 
-**Parameters:**  
-None.
+**Parameters:**  None
 
 **Returns:**  
-- `Value::Number`: The current time in milliseconds as a floating-point number.
+- `Number`: The current time in milliseconds
 
 **Example Usage:**
 ```ap
@@ -44,14 +41,13 @@ DISPLAY(current_time)
 
 ## SLEEP
 
-**Description:**  
 Pauses the execution of the program for a specified number of milliseconds.
 
 **Parameters:**  
-- `duration` (Value::Number): The duration to sleep in milliseconds.
+- `duration: Number` The duration to sleep in milliseconds.
 
 **Returns:**  
-- `Value::Null`: No return value, the function pauses the execution.
+- `Null`
 
 **Example Usage:**
 ```ap

@@ -1,11 +1,10 @@
 # String Module Documentation
 
-This module provides various string manipulation functions that allow for conversion, splitting, transformation, and inspection of strings.
-
-### Import Example
 ```ap
 IMPORT MOD "STRING"
 ```
+
+This module provides various string manipulation functions that allow for conversion, splitting, transformation, and inspection of strings.
 
 ## Table of Contents
 
@@ -36,15 +35,14 @@ IMPORT MOD "STRING"
 
 ## TO_NUMBER
 
-**Description:**  
 Converts a string to a number (`f64`). Returns `NULL` if the conversion is not possible.
 
 **Parameters:**  
-- `raw` (Value::String): The string to convert.
+- `raw: String` The string to convert.
 
 **Returns:**  
-- `Value::Number`: The converted number.
-- `Value::Null`: If the conversion fails.
+- `Number`: The converted number.
+- `Null`: If the conversion fails.
 
 **Example Usage:**
 ```ap
@@ -59,15 +57,14 @@ IF (number == NULL) {
 
 ## TO_BOOL
 
-**Description:**  
 Converts a string to a boolean. Returns `NULL` if the conversion is not possible.
 
 **Parameters:**  
-- `raw` (Value::String): The string to convert.
+- `raw: String` The string to convert.
 
 **Returns:**  
-- `Value::Bool`: The converted boolean.
-- `Value::Null`: If the conversion fails.
+- `Bool`: The converted boolean.
+- `Null`: If the conversion fails.
 
 **Example Usage:**
 ```ap
@@ -82,15 +79,14 @@ IF (boolean != NULL AND boolean == TRUE) {
 
 ## SPLIT
 
-**Description:**  
 Splits a string into a list of strings based on a pattern.
 
 **Parameters:**  
-- `raw` (Value::String): The string to split.
-- `pattern` (Value::String): The delimiter used to split the string.
+- `raw: String` The string to split.
+- `pattern: String` The delimiter used to split the string.
 
 **Returns:**  
-- `Value::List`: A list of strings obtained by splitting the original string.
+- `List`: A list of strings obtained by splitting the original string.
 
 **Example Usage:**
 ```ap
@@ -99,81 +95,81 @@ parts <- SPLIT("apple,banana,orange", ",")
 FOR EACH item IN parts {
     DISPLAY(item)
 }
+
+// apple
+// banana
+// orange
 ```
 
 ---
 
 ## TO_UPPER
 
-**Description:**  
 Converts a string to uppercase.
 
 **Parameters:**  
-- `raw` (Value::String): The string to convert.
+- `raw: String` The string to convert.
 
 **Returns:**  
-- `Value::String`: The converted uppercase string.
+- `String`: The converted uppercase string.
 
 **Example Usage:**
 ```ap
 upper_case <- TO_UPPER("hello")
 
-DISPLAY(upper_case)
+DISPLAY(upper_case) // "HELLO"
 ```
 
 ---
 
 ## TO_LOWER
 
-**Description:**  
 Converts a string to lowercase.
 
 **Parameters:**  
-- `raw` (Value::String): The string to convert.
+- `raw: String` The string to convert.
 
 **Returns:**  
-- `Value::String`: The converted lowercase string.
+- `String`: The converted lowercase string.
 
 **Example Usage:**
 ```ap
 lower_case <- TO_LOWER("HELLO")
 
-DISPLAY(lower_case)
+DISPLAY(lower_case) // "hello"
 ```
 
 ---
 
 ## TRIM
 
-**Description:**  
 Removes leading and trailing whitespace from a string.
 
 **Parameters:**  
-- `raw` (Value::String): The string to trim.
+- `raw: String` The string to trim.
 
 **Returns:**  
-- `Value::String`: The trimmed string.
+- `String`: The trimmed string.
 
 **Example Usage:**
 ```ap
 trimmed <- TRIM("  hello  ")
 
-DISPLAY(trimmed)
+DISPLAY(trimmed) // "hello"
 ```
 
 ---
 
 ## CONTAINS
 
-**Description:**  
 Checks if a string contains a given substring.
 
 **Parameters:**  
-- `raw` (Value::String): The string to search.
-- `pattern` (Value::String): The substring to search for.
+- `raw: String` The string to search.
+- `pattern: String` The substring to search for.
 
 **Returns:**  
-- `Value::Bool`: `true` if the substring is found, `false` otherwise.
+- `Bool`: `true` if the substring is found, `false` otherwise.
 
 **Example Usage:**
 ```ap
@@ -188,37 +184,35 @@ IF (contains) {
 
 ## REPLACE
 
-**Description:**  
 Replaces all occurrences of a substring with another substring.
 
 **Parameters:**  
-- `raw` (Value::String): The string to modify.
-- `from` (Value::String): The substring to replace.
-- `to` (Value::String): The substring to replace with.
+- `raw: String` The string to modify.
+- `from: String` The substring to replace.
+- `to: String` The substring to replace with.
 
 **Returns:**  
-- `Value::String`: The modified string with replacements.
+- `String`: The modified string with replacements.
 
 **Example Usage:**
 ```ap
 replaced <- REPLACE("hello world", "world", "everyone")
 
-DISPLAY(replaced)
+DISPLAY(replaced) // "hello everyone"
 ```
 
 ---
 
 ## STARTS_WITH
 
-**Description:**  
 Checks if a string starts with a given prefix.
 
 **Parameters:**  
-- `raw` (Value::String): The string to check.
-- `prefix` (Value::String): The prefix to check for.
+- `raw: String` The string to check.
+- `prefix: String` The prefix to check for.
 
 **Returns:**  
-- `Value::Bool`: `true` if the string starts with the prefix, `false` otherwise.
+- `Bool`: `true` if the string starts with the prefix, `false` otherwise.
 
 **Example Usage:**
 ```ap
@@ -233,15 +227,14 @@ IF (starts) {
 
 ## ENDS_WITH
 
-**Description:**  
 Checks if a string ends with a given suffix.
 
 **Parameters:**  
-- `raw` (Value::String): The string to check.
-- `suffix` (Value::String): The suffix to check for.
+- `raw: String` The string to check.
+- `suffix: String` The suffix to check for.
 
 **Returns:**  
-- `Value::Bool`: `true` if the string ends with the suffix, `false` otherwise.
+- `Bool`: `true` if the string ends with the suffix, `false` otherwise.
 
 **Example Usage:**
 ```ap
@@ -256,57 +249,54 @@ IF (ends) {
 
 ## JOIN
 
-**Description:**  
 Joins a list of strings into a single string, separated by a given separator.
 
 **Parameters:**  
-- `list` (Value::List): The list of strings to join.
-- `separator` (Value::String): The separator to use between elements.
+- `list: List` The list of strings to join.
+- `separator: String` The separator to use between elements.
 
 **Returns:**  
-- `Value::String`: The joined string.
+- `String`: The joined string.
 
 **Example Usage:**
 ```ap
 joined <- JOIN(["apple", "banana", "orange"], ", ")
 
-DISPLAY(joined)
+DISPLAY(joined) // "apple, banana, orange"
 ```
 
 ---
 
 ## SUBSTRING
 
-**Description:**  
 Extracts a substring from a string, starting at a given position and of a specified length.
 
 **Parameters:**  
-- `raw` (Value::String): The original string.
-- `start` (Value::Number): The starting index (1-based).
-- `length` (Value::Number): The length of the substring.
+- `raw: String` The original string.
+- `start: Number` The starting index (1-based).
+- `length: Number` The length of the substring.
 
 **Returns:**  
-- `Value::String`: The extracted substring.
+- `String`: The extracted substring.
 
 **Example Usage:**
 ```ap
 substring <- SUBSTRING("hello world", 1, 4)
 
-DISPLAY(substring)
+DISPLAY(substring) // ello
 ```
 
 ---
 
 ## TO_CHAR_ARRAY
 
-**Description:**  
 Converts a string into a list of single-character strings.
 
 **Parameters:**  
-- `raw` (Value::String): The string to convert.
+- `raw: String` The string to convert.
 
 **Returns:**  
-- `Value::List`: A list where each element is a single-character string.
+- `List`: A list where each element is a single-character string.
 
 **Example Usage:**
 ```ap
@@ -315,4 +305,10 @@ char_array <- TO_CHAR_ARRAY("hello")
 FOR EACH char in char_array {
   DISPLAY(char)
 }
+
+// h
+// e
+// l
+// l
+// o
 ```
