@@ -21,3 +21,5 @@
 - [fs](std/fs.md)
 - [time](std/time.md)
 - [math](std/math.md)
+- [string](std/strings.md)
+- [io](std/io.md)

@@ -1,4 +1,4 @@
-# "STRING" Module Documentation
+# String Module Documentation
 
 This module provides various string manipulation functions that allow for conversion, splitting, transformation, and inspection of strings.
 
@@ -9,9 +9,10 @@ IMPORT MOD "STRING"
 
 ## Table of Contents
 
-- ["STRING" Module Documentation](#string-module-documentation)
+- [String Module Documentation](#string-module-documentation)
     - [Import Example](#import-example)
   - [Table of Contents](#table-of-contents)
+- [Functions](#functions)
   - [TO\_NUMBER](#to_number)
   - [TO\_BOOL](#to_bool)
   - [SPLIT](#split)
@@ -28,6 +29,11 @@ IMPORT MOD "STRING"
 
 ---
 
+# Functions
+
+---
+
+
 ## TO_NUMBER
 
 **Description:**  
@@ -43,6 +49,10 @@ Converts a string to a number (`f64`). Returns `NULL` if the conversion is not p
 **Example Usage:**
 ```ap
 number <- TO_NUMBER("123.45")
+
+IF (number == NULL) {
+    DISPLAY("Conversion failed.")
+}
 ```
 
 ---
@@ -62,6 +72,10 @@ Converts a string to a boolean. Returns `NULL` if the conversion is not possible
 **Example Usage:**
 ```ap
 boolean <- TO_BOOL("true")
+
+IF (boolean != NULL AND boolean == TRUE) {
+    DISPLAY("It's true!")
+}
 ```
 
 ---
@@ -81,6 +95,10 @@ Splits a string into a list of strings based on a pattern.
 **Example Usage:**
 ```ap
 parts <- SPLIT("apple,banana,orange", ",")
+
+FOR EACH item IN parts {
+    DISPLAY(item)
+}
 ```
 
 ---
@@ -99,6 +117,8 @@ Converts a string to uppercase.
 **Example Usage:**
 ```ap
 upper_case <- TO_UPPER("hello")
+
+DISPLAY(upper_case)
 ```
 
 ---
@@ -117,6 +137,8 @@ Converts a string to lowercase.
 **Example Usage:**
 ```ap
 lower_case <- TO_LOWER("HELLO")
+
+DISPLAY(lower_case)
 ```
 
 ---
@@ -135,6 +157,8 @@ Removes leading and trailing whitespace from a string.
 **Example Usage:**
 ```ap
 trimmed <- TRIM("  hello  ")
+
+DISPLAY(trimmed)
 ```
 
 ---
@@ -154,6 +178,10 @@ Checks if a string contains a given substring.
 **Example Usage:**
 ```ap
 contains <- CONTAINS("hello world", "world")
+
+IF (contains) {
+    DISPLAY("Found it!")
+}
 ```
 
 ---
@@ -174,6 +202,8 @@ Replaces all occurrences of a substring with another substring.
 **Example Usage:**
 ```ap
 replaced <- REPLACE("hello world", "world", "everyone")
+
+DISPLAY(replaced)
 ```
 
 ---
@@ -193,6 +223,10 @@ Checks if a string starts with a given prefix.
 **Example Usage:**
 ```ap
 starts <- STARTS_WITH("hello", "he")
+
+IF (starts) {
+    DISPLAY("Starts with 'he'")
+}
 ```
 
 ---
@@ -212,6 +246,10 @@ Checks if a string ends with a given suffix.
 **Example Usage:**
 ```ap
 ends <- ENDS_WITH("hello", "lo")
+
+IF (ends) {
+    DISPLAY("Ends with 'lo'")
+}
 ```
 
 ---
@@ -231,6 +269,8 @@ Joins a list of strings into a single string, separated by a given separator.
 **Example Usage:**
 ```ap
 joined <- JOIN(["apple", "banana", "orange"], ", ")
+
+DISPLAY(joined)
 ```
 
 ---
@@ -242,7 +282,7 @@ Extracts a substring from a string, starting at a given position and of a specif
 
 **Parameters:**  
 - `raw` (Value::String): The original string.
-- `start` (Value::Number): The starting index (0-based).
+- `start` (Value::Number): The starting index (1-based).
 - `length` (Value::Number): The length of the substring.
 
 **Returns:**  
@@ -250,7 +290,9 @@ Extracts a substring from a string, starting at a given position and of a specif
 
 **Example Usage:**
 ```ap
-substring <- SUBSTRING("hello world", 0, 5)
+substring <- SUBSTRING("hello world", 1, 4)
+
+DISPLAY(substring)
 ```
 
 ---
@@ -269,4 +311,8 @@ Converts a string into a list of single-character strings.
 **Example Usage:**
 ```ap
 char_array <- TO_CHAR_ARRAY("hello")
+
+FOR EACH char in char_array {
+  DISPLAY(char)
+}
 ```
