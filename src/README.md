@@ -6,7 +6,7 @@ The purpose of this guide is not to replace your teacher but to get you acquaint
 
 Back in the early days of personal computing, computers often came with a manual that was absolutely indispensable. It was difficult to accomplish much without that manual. Let this guide be your modern equivalent—your go-to resource for learning ApLang. 
 
-Some of ApLangs syntax is garbage. womp womp. Sorry about that...I did not design it. It was designed lovingly by committee by the Collage Board. 
+Some of ApLangs syntax is garbage. Sorry about that...I did not design it. It was designed lovingly by committee at Collage Board head quarters. 
 
 ## Standard Library Documentation
 

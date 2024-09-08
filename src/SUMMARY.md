@@ -16,6 +16,10 @@
 	- [Break And Continue](guide/flow/break_continue.md)
 - [Procedures](guide/procedure.md)
 - [Modules](guide/modules.md)
+## Other
+- [Other](other/other.md)
+    - [ASCII Escapes](other/ascii_escapes.md)
+    - [Error Message Anatomy](other/error_anatomy.md)
 # Standard Library
 - [core](std/core.md)
 - [fs](std/fs.md)
