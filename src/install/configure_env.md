@@ -78,6 +78,14 @@ To start working on aplang projects, it is recommended to use Visual Studio Code
 	```
 1. **Save the File**: Click on "File" > "Save As..." or press `Ctrl + S` (`Cmd + S` on macOS). Name the file `main.ap` and save it in your project directory.
 2. **(Recommended)**: Also Enable autosave from from the "File" context menu.
+
+## Step 4: Install the VSCode Extension
+
+1. **Find the Extension in the Visual Studio Marketplace**: It is available [here](https://marketplace.visualstudio.com/items?itemName=aplang.aplang)
+   - Alternatively, search for ApLang in the "Extensions" tab in Visual Studio Code
+
+2. **Install the Extension**: Press the install `Install` button.
+
 ## Step 4: Run the `main.ap` File with the `aplang` Binary
 
 1. **Open Integrated Terminal in VS Code**:
