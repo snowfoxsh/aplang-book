@@ -65,10 +65,9 @@ EXPORT PROCEDURE myFunction() {
 }
 ```
 
-If you are exporting Procedures that require other Modules, you must import the Module Inside the Procedure that you want to export, or you must import the Module inside the main file that calls the Procedure.
+<div class="warning">If you are exporting Procedures that require other Modules, you must import the Module Inside the Procedure that you want to export, or you must import the Module inside the main file that calls the Procedure.
 
-<div class="warning">This Behavior Might Change In The Future</div>
-
+This Behavior Might Change In The Future</div>
 #### Importing the Module inside the Procedure
 ```ap
 // main.ap
