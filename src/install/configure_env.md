@@ -86,7 +86,7 @@ To start working on aplang projects, it is recommended to use Visual Studio Code
 
 2. **Install the Extension**: Press the install `Install` button.
 
-## Step 4: Run the `main.ap` File with the `aplang` Binary
+## Step 5: Run the `main.ap` File with the `aplang` Binary
 
 1. **Open Integrated Terminal in VS Code**:
    - Go to "View" > "Terminal" or press `` Ctrl + ` ``.
