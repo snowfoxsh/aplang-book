@@ -45,6 +45,25 @@ DISPLAY(123)
 
 ---
 
+## DISPLAY_NOLN
+
+Outputs the given value to the console without creating a newline.
+
+**Parameters:**  
+- `value: Any` The value to be displayed.
+
+**Returns:**  
+- `NULL`
+
+**Example Usage:**
+```ap
+DISPLAY_NOLN("Hello, world!")
+DISPLAY_NOLN(123)
+// Hello, world!123
+```
+
+---
+
 ## INPUT
 
 Prompts the user for input and returns the entered value as a string.
