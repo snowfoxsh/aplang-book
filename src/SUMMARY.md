@@ -27,3 +27,4 @@
 - [math](std/math.md)
 - [string](std/strings.md)
 - [io](std/io.md)
+- [style](std/style.md)
