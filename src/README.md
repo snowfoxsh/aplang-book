@@ -14,3 +14,9 @@ This book also contains the documentation for the standard library. Documentatio
 ## About
 
 ApLang was created using the programming language [Rust](https://rust-lang.org). Rust was chosen primarily for its ability to "run anywhere" (thanks to LLVM <3) and its excellent package manager, Cargo. ApLang is an interpreted language, meaning it is executed without being compiled first, making it easy to use and accessible to as many people as possible.
+
+## Links
+- [Website](https://aplang.org) (You are here)
+- [ApLang Repo](https://github.com/snowfoxsh/aplang)
+- [ApLang Book Repo](https://github.com/snowfoxsh/aplang-book)
+- [ApLang VSCode Plugin Repo](https://github.com/snowfoxsh/aplang-vscode-plugin)
