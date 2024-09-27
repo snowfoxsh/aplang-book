@@ -1,5 +1,5 @@
 # ApLang Book
-This is the repository containing the book part of aplang.org. 
+This is the repository containing the book part of aplang.org. See the book live [here](https://aplang.org/book).
 
 ## Links
 - [Website](https://aplang.org)
