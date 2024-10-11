@@ -5,20 +5,8 @@ IMPORT MOD "FS"
 ```
 
 The File System module provides functions for interacting with the file system, including checking paths, reading/writing files, and managing directories.
-## Table of Contents
 
-- [File System Module Documentation](#file-system-module-documentation)
-    - [Import Example](#import-example)
-  - [Table of Contents](#table-of-contents)
-- [Functions](#functions)
-  - [PATH\_EXISTS](#path_exists)
-  - [PATH\_IS\_FILE](#path_is_file)
-  - [PATH\_IS\_DIRECTORY](#path_is_directory)
-  - [FILE\_CREATE](#file_create)
-  - [FILE\_READ](#file_read)
-  - [FILE\_APPEND](#file_append)
-  - [FILE\_OVERWRITE](#file_overwrite)
-  - [READ\_DIRECTORY](#read_directory)
+## Table Of Contents
 
 ---
 
@@ -160,7 +148,7 @@ DISPLAY(success)
 
 ---
 
-## READ_DIRECTORY
+## DIRECTORY_READ
 
 Reads the contents of a directory and returns a list of file paths.
 
@@ -168,13 +156,104 @@ Reads the contents of a directory and returns a list of file paths.
 - `path: String` The path of the directory to read.
 
 **Returns:**  
-- `List`: A list of file paths in the directory.
+- `List` A list of file paths in the directory.
 
 **Example Usage:**
 ```ap
-files <- READ_DIRECTORY("/home/user/")
+files <- DIRECTORY_READ("/home/user/")
 
 FOR EACH file IN files {
     DISPLAY(file)
 }
 ```
+
+---
+
+## DIRECTORY_CREATE
+
+Creates a new, empty directory at the provided path. Does not create parent directories. 
+
+Note: To create a directory and all its missing parents at the same time, instead use `DIRECTORY_CREATE_ALL`.
+**Parameters:**
+- `path: String` The path of the directory to be created.
+
+**Returns:**
+- `Bool` Is `TRUE` if creation was successfull `FALSE` otherwise.
+
+
+**Errors When:**
+- User lacks permissions to create directory at `path`.
+- A parent of the given path doesn't exist. 
+- `path` already exists.
+
+**Example Usage:**
+```ap
+success <- DIRECTORY_CREATE("some/dir")
+DISPLAY(success)
+```
+
+
+--- 
+
+## DIRECTORY_CREATE_ALL
+
+Creates a new, empty directory at the provided path. Will create parent directories.
+
+
+**Parameters:**
+- `path: String` The path of the directory to be created.
+
+**Returns:**
+- `Bool` Is `TRUE` if creation was successfull `FALSE` otherwise.
+
+**Errors When:**
+- If any directory in the path specified by path does not already exist and it could not be created otherwise.
+
+**Example Usage:**
+```ap
+success <- DIRECTORY_CREATE_ALL("some/dir")
+DISPLAY(success)
+```
+
+---
+
+## DIRECTORY_REMOVE_ALL
+*Be very cautious when using this function!* 
+
+Removes a directory at this path, after removing *all* its contents.
+
+
+**Parameters:**
+- `path: String` The path of the directory to be removed.
+
+**Returns:**
+- `Bool` Is `TRUE` if creation was successfull `FALSE` otherwise.
+
+**Example Usage:**
+```ap
+success <- DIRECTORY_REMOVE_ALL("some/dir")
+DISPLAY(success)
+```
+
+
+## DIRECTORY_REMOVE
+Removes an empty directory.
+
+**Parameters:**
+- `path: String` The path of the directory to be removed.
+
+**Returns:**
+- `Bool` Is `TRUE` if creation was successfull `FALSE` otherwise.
+
+**Errors When:**
+- `path` doesn't exist.
+- `path` isn't a directory.
+- The user lacks permissions to remove the directory at the provided `path`.
+- The directory isn't empty.
+
+**Example Usage:**
+```ap
+success <- DIRECTORY_REMOVE("some/dir")
+DISPLAY(success)
+```
+
