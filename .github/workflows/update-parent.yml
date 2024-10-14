@@ -3,7 +3,7 @@ name: Send submodule updates to parent repo
 on:
   push:
     branches: [ "main" ]
-  pull_request:
+  pull_request:  
     branches: [ "main" ]
   workflow_dispatch:  # Allows manual triggering of the workflow
 
@@ -16,7 +16,7 @@ jobs:
         with:
           repository: snowfoxsh/aplang-website
           token: ${{ secrets.WEBSITE_CI_TOKEN }}
-          submodules: true
+          submodules: false
 
       - name: Pull & update submodules recursively
         run: |
