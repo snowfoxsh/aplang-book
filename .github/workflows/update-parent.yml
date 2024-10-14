@@ -1,0 +1,33 @@
+name: Send submodule updates to parent repo
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:  # Allows manual triggering of the workflow
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: snowfoxsh/aplang-website
+          token: ${{ secrets.WEBSITE_CI_TOKEN }}
+          submodules: true
+
+      - name: Pull & update submodules recursively
+        run: |
+          git submodule update --init --recursive
+          git submodule update --recursive --remote
+
+      - name: Commit
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "[actions]"
+          git add --all
+          git commit -m "[act] update submodules" || echo "no changes to commit"
+          git push
+
