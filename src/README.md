@@ -1,22 +1,18 @@
-# README
+# README  
+This is the introduction to ApLang, a tool designed to help you excel in your AP Computer Science Principles class and achieve higher scores on your AP test. ApLang follows an extended version of the [AP-CSP Spec](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-exam-reference-sheet.pdf).  
 
-This is the introduction to ApLang, a tool designed to help you excel in your AP Computer Science Principles class and score higher on your AP test.
+In the early days of computing, manuals were essential tools, guiding users through every step to unlock their computer's potential. Think of this guide as your modern equivalent—a comprehensive resource to help you learn and use ApLang.
 
-The purpose of this guide is not to replace your teacher but to get you acquainted with ApLang and serve as a reference while you are programming. It assumes you have some very basic knowledge of programming but are still a beginner.
+This guide is not meant to replace your teacher but to complement your learning, serving as both an introduction to ApLang and a reliable reference as you develop your programming skills.  
 
-Back in the early days of personal computing, computers often came with a manual that was absolutely indispensable. It was difficult to accomplish much without that manual. Let this guide be your modern equivalent—your go-to resource for learning ApLang. 
+## Standard Library Documentation  
+Inside, you'll find detailed documentation for the ApLang standard library. Each module and function is carefully explained to help you understand its purpose and how to use it effectively.  
 
-Some of ApLangs syntax is garbage. Sorry about that...I did not design it. It was designed lovingly by committee at Collage Board head quarters. 
+## About ApLang  
+ApLang was built using the Rust programming language, chosen for its exceptional performance, portability via LLVM, and its developer-friendly package manager, Cargo. As an interpreted language, ApLang allows you to write and execute code without a compilation step, ensuring it remains accessible and easy to use for learners of all levels. It prioritizes error handling over speed to provide you with the best feedback possible.  
 
-## Standard Library Documentation
-
-This book also contains the documentation for the standard library. Documentation explains how each standard library module's functions work. 
-## About
-
-ApLang was created using the programming language [Rust](https://rust-lang.org). Rust was chosen primarily for its ability to "run anywhere" (thanks to LLVM <3) and its excellent package manager, Cargo. ApLang is an interpreted language, meaning it is executed without being compiled first, making it easy to use and accessible to as many people as possible.
-
-## Links
-- [Website](https://aplang.org) (You are here)
-- [ApLang Repo](https://github.com/snowfoxsh/aplang)
-- [ApLang Book Repo](https://github.com/snowfoxsh/aplang-book)
-- [ApLang VSCode Plugin Repo](https://github.com/snowfoxsh/aplang-vscode-plugin)
+## Links  
+- [Website](https://aplang.org) (You are here)  
+- [ApLang Repository](https://github.com/snowfoxsh/aplang)  
+- [ApLang Book Repository](https://github.com/snowfoxsh/aplang-book)  
+- [ApLang VSCode Plugin Repository](https://github.com/snowfoxsh/aplang-vscode-plugin)  
