@@ -31,13 +31,13 @@ User Modules are modules written by you, the programmer, using ApLang. These mod
 // main.ap
 
 // Importing a specific function from a user module using its relative path
-IMPORT "myFunction" FROM "./myModule.ap"
+IMPORT "myFunction" FROM MOD "./myModule.ap"
 
 // This is equivalent to the previous statement
-IMPORT "myFunction" FROM "myModule.ap"
+IMPORT "myFunction" FROM MOD "myModule.ap"
 
 // Importing a whole nested module
-IMPORT "./nested/myNestedModule.ap"
+IMPORT MOD "./nested/myNestedModule.ap"
 ```
 
 In contrast to Standard Library Modules, user-defined functions and modules should be written in camelCase rather than SCREAMING_CASE. This helps distinguish user code from the standard library code.
@@ -88,7 +88,7 @@ myModuleFunction() {
 ```ap
 // main.ap
 IMPORT MOD "module.ap"
-IMPORT "TIME" // Or you can import TIME here
+IMPORT MOD "TIME" // Or you can import TIME here
 
 myModuleFunction() // Function defined in module.ap
 
