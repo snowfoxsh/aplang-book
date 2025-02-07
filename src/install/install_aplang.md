@@ -1,5 +1,35 @@
 # Install ApLang
-## With Cargo (All Platforms)
+
+## Windows
+
+### Microsoft Store
+*Coming Soon*
+
+### Winget
+
+1. **Open Your Terminal**  
+   Open Command Prompt, PowerShell, or Windows Terminal.
+
+2. **Install ApLang**  
+   Type the following command and press **Enter**:
+   ```bash
+   winget install aplang
+   ```
+
+3. **Restart the shell**  
+   Restart your shell to make the `aplang` command available
+
+4. **Verify the Installation**  
+   Once the installation is complete, run:
+   ```bash
+   aplang --version
+   ```
+   This command will display the installed version of ApLang, confirming a successful installation.
+
+
+## With Cargo
+*All Platforms*
+
 ### Step 1: Install Rust and Cargo
 
 Before you can install `aplang`, you need to have Rust and Cargo installed on your computer. Cargo is the package manager and build system for the Rust programming language, and it comes bundled with Rust.
