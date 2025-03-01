@@ -8,3 +8,4 @@ title = "ApLang"
 [output.html]
 preferred-dark-theme = "ayu"
 git-repository-url = "https://github.com/snowfoxsh/aplang"
+additional-js = ["theme/custom.js"]
