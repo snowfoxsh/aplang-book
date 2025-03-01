@@ -37,6 +37,7 @@ In this example, the `FOR EACH` loop iterates over each element in the `numbers`
 
 ```ap
 // Define a list of words
+IMPORT "TO_UPPER" FROM MOD "STRING"
 words <- ["apple", "banana", "cherry"]
 
 // Iterate over each word in the list and display it in uppercase

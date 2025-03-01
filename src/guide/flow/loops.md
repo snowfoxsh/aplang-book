@@ -92,7 +92,7 @@ In this example, the loop runs until `count` equals `5`. With each iteration, `c
 ```ap
 // Initialize variables
 balance <- 100
-goal <- 200
+goal <- 400
 
 // Double the balance until it reaches the goal
 REPEAT UNTIL (balance >= goal) {
@@ -100,10 +100,11 @@ REPEAT UNTIL (balance >= goal) {
     DISPLAY(balance)
 }
 // Output:
-// 200
+// 200 
+// 400
 ```
 
-In this example, the loop doubles the `balance` on each iteration and displays it. The loop continues until `balance` is greater than or equal to the `goal` of 200.
+In this example, the loop doubles the `balance` on each iteration and displays it. The loop continues until `balance` is greater than or equal to the `goal` of 400.
 
 ## Conclusion
 

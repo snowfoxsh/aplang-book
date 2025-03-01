@@ -27,7 +27,9 @@ The `CONTINUE` keyword is used to skip the current iteration of a loop and move 
 Here's an example of using `CONTINUE`:
 
 ```ap
+i <- 0
 REPEAT 10 TIMES {
+    i <- i + 1
     IF (i == 5) {
         CONTINUE
     }
@@ -43,6 +45,7 @@ In this case, when the value of `i` is 5, the `CONTINUE` statement will skip dis
 Both `BREAK` and `CONTINUE` can also be used in `FOR EACH` loops to manage the flow of list iteration. Here's an example:
 
 ```ap
+myList <- ["a", "b", "skipThis", "c", "stopHere", "d"]
 FOR EACH item IN myList {
     IF (item == "skipThis") {
         CONTINUE
@@ -58,4 +61,4 @@ In this example, the `CONTINUE` statement skips the iteration where `item` equal
 
 ### Conclusion
 
-The `BREAK` and `CONTINUE` keywords give you finer control over loop execution in ApLang. Whether you need to prematurely exit a loop or skip over specific iterations, these commands provide essential tools for managing complex looping conditions.
+The `BREAK` and `CONTINUE` keywords give you finer control over loop execution. Whether you need to prematurely exit a loop or skip over specific iterations, these commands provide essential tools for managing complex looping conditions.
