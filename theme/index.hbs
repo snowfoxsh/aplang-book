@@ -1,9 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="{{ language }}" class="{{ default_theme }} sidebar-visible" dir="{{ text_direction }}">
     <head>
-        <!-- Tracking Script -->
-        <script defer src="https://cloud.umami.is/script.js" data-website-id="fb7a7cc7-adf5-4283-89cd-b875fe6dddf1"></script>
-
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>{{ title }}</title>
@@ -64,6 +61,17 @@
         <!-- Start loading toc.js asap -->
         <script src="{{ path_to_root }}toc.js"></script>
     </head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8F0SRVZC7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-B8F0SRVZC7');
+    </script>
+
     <body>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
